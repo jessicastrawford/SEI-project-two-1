@@ -1,0 +1,28 @@
+@import '~bulma/bulma.sass';
+
+.library-container {
+  display:flex;
+  flex-direction: column;
+
+  .books-container {
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .book-card {
+    border: 1px solid black;
+    width: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .book-image {
+      width: 150px;
+    }
+  }
+
+
+
+}
