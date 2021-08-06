@@ -96,10 +96,11 @@ h1 {
 .book-show-container {
   background-color: $peach;
   color: $dark-green;
-  height: 800px;
+  height: 900px;
 
   hr {
     background-color: $orange;
+    margin: 0 auto;
   }
 
   .city-container {
