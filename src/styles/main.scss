@@ -1,28 +1,217 @@
+@import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 @import '~bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
 
-.library-container {
-  display:flex;
-  flex-direction: column;
+$dark-green: #2C6E49;
+$green: #4C956C;
+$orange: #D68C45;
+$peach: #FFC9B9;
+$offwhite: #FEFEE3;
 
-  .books-container {
-    display:flex;
-    flex-wrap:wrap;
-  }
+body{
+  font-family: 'EB Garamond', serif;
+  background-color: $peach;
+}
 
-  .book-card {
-    border: 1px solid black;
-    width: 200px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+a {
+  color: $dark-green;
+}
 
-
-    .book-image {
-      width: 150px;
+.navbar {
+  background-color: $green;
+  // .navbar-item :hover{
+  //   background-color:#2C6E49;
+  //   text-decoration: none;
+  .navbar-item {
+    color: $offwhite;
+    .active{
+      color: $peach;
     }
   }
+}
+
+.active {
+    border-bottom: 5px solid $dark-green;
+    text-decoration: none;
+}
 
 
+.library-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: $dark-green;
+  background-color: $peach;
 
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  :hover{
+    box-shadow: 0 0 15px 0 $orange;
+      transform: scale(1.05,1.05); 
+  }
+}
+
+.book-card {
+  border: 1px solid $orange;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  background-color: $offwhite;
+  height: 380px;
+
+  :hover{
+    box-shadow: none;
+  }
+
+  h3 {
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    white-space: wrap;
+    overflow: hidden;
+  }
+
+  .book-image {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+  }
+}
+
+.book-show-container {
+  background-color: $peach;
+  color: $dark-green;
+  height: 800px;
+
+  hr {
+    background-color: $orange;
+  }
+
+  .city-container {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    color: $dark-green;
+  }
+}
+
+.title-wrapper {
+  margin: 20px auto;
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: $dark-green;
+  }
+
+  p{
+    font-size: 35px;
+  }
+}
+
+.image-and-info-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-wrapper {
+  margin: 40px auto 0 auto;
+  width: 270px;
+}
+
+.city-info-wrapper {
+  margin: 40px auto 0 auto;
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 27px;
+  }
+  
+  .city-weather {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
+
+.Loading {
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+.hero {
+  background-image: url('https://aslis.com/wp-content/uploads/istockphoto-944631208-612x612-1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  z-index: 1;
+  display:flex;
+
+  //   .info-box{
+  //   z-index: 3;
+  //   height:50px
+  //   // background-color: $offwhite;
+  //   // opacity:20%;
+  // }
+
+  // .light-box {
+  //   z-index: 2;
+  //   background-color: $offwhite;
+  //   opacity: 20%;
+  //   height: 200px;
+  //   width: 380px;
+  //   display: flex;
+  //   justify-content: center;
+  //   position:absolute;
+  //   margin-top: 250px;
+  //   margin-left: 465px;
+  // }
+
+  h1 {
+    margin-top: 250px;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $green;
+  }
+
+  .quote {
+    text-align: center;
+  }
+
+  .button{
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'EB Garamond', serif;
+  }
+
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: $peach;
 }

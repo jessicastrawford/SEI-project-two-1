@@ -3,7 +3,7 @@ export default [
     id: 1,
     title: '100 Years of Solitude',
     author: 'Gabriel Garcia Marquez',
-    place: 'Bogata, Colombia',
+    place: 'Bogata',
     image: 'https://upload.wikimedia.org/wikipedia/en/a/a0/Cien_a%C3%B1os_de_soledad_%28book_cover%2C_1967%29.jpg',
   },
   {
@@ -17,7 +17,7 @@ export default [
     id: 3,
     title: 'Into the Wild',
     author: 'Jon Krakauer',
-    place: 'Denali',
+    place: 'Denali Borough, Alaska',
     image: 'https://upload.wikimedia.org/wikipedia/en/6/63/Into_the_Wild_%28book%29_cover.png',
   },
   {
@@ -73,7 +73,7 @@ export default [
     id: 11,
     title: 'In Patagonia',
     author: 'Bruce Chatwin',
-    place: 'Frutillar',
+    place: 'Los Lagos, Chile',
     image: 'https://upload.wikimedia.org/wikipedia/en/6/6a/InPatagonia.jpg',
   },
   {
@@ -94,7 +94,7 @@ export default [
     id: 14,
     title: 'My Sister the Serial Killer',
     author: 'Oyinkan Braithwaite',
-    place: 'Lagos, Nigeria',
+    place: 'Lagos, Lagoon',
     image: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1523366732l/38819868._SY475_.jpg',
   },
   {
@@ -150,7 +150,7 @@ export default [
     id: 22,
     title: 'The Girl With The Pearl Earring',
     author: 'Tracey Chevalier',
-    place: 'Delft, Holland',
+    place: 'Oude Kerk',
     image: 'https://cdn.waterstones.com/bookjackets/large/9780/0072/9780007232161.jpg',
   },
   {
